@@ -1,3 +1,64 @@
-header{
-    background-color: aliceblue;
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Header */
+header {
+  display: flex;
+  align-items: center;
+  background-color: #0a3d62;
+  padding: 10px 20px;
+}
+
+/* Logo */
+.logo {
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Navigation */
+nav ul {
+  list-style: none;
+  display: flex;
+  margin-left: auto;
+}
+
+nav li {
+  margin: 0 10px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  padding: 6px 10px;
+}
+
+/* Hover feedback */
+nav a:hover {
+  background-color: #3c6382;
+  border-radius: 5px;
+}
+
+/* Active page */
+.active {
+  background-color: #60a3bc;
+  border-radius: 5px;
+}
+
+/* Content */
+main {
+  padding: 20px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  background-color: #0a3d62;
+  color: white;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
