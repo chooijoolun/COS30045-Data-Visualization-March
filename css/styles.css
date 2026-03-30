@@ -1,64 +1,93 @@
-body {
+/* Reset */
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
   font-family: Arial, sans-serif;
+  background: #f5f6fa;
 }
 
 /* Header */
-header {
+.header {
   display: flex;
   align-items: center;
-  background-color: #0a3d62;
-  padding: 10px 20px;
+  justify-content: space-between;
+  background: #0a3d62;
+  padding: 15px 25px;
 }
 
-/* Logo */
-.logo {
-  color: white;
-  font-weight: bold;
+/* Logo image */
+.logo img {
+  height: 50px;       /* adjust size */
+  width: auto;
   cursor: pointer;
+  transition: transform 0.3s;
+}
+
+/* Hover effect on logo */
+.logo img:hover {
+  transform: scale(1.1);
 }
 
 /* Navigation */
-nav ul {
+.nav-links {
   list-style: none;
   display: flex;
-  margin-left: auto;
+  gap: 15px;
 }
 
-nav li {
-  margin: 0 10px;
-}
-
-nav a {
+.nav-links a {
   text-decoration: none;
   color: white;
-  padding: 6px 10px;
-}
-
-/* Hover feedback */
-nav a:hover {
-  background-color: #3c6382;
+  padding: 8px 12px;
+  transition: 0.3s;
   border-radius: 5px;
 }
 
-/* Active page */
+/* Hover */
+.nav-links a:hover {
+  background: #3c6382;
+}
+
+/* Active */
 .active {
-  background-color: #60a3bc;
-  border-radius: 5px;
+  background: #60a3bc;
 }
 
-/* Content */
-main {
+/* Main container */
+.container {
+  padding: 40px;
+}
+
+/* Card */
+.card {
+  background: white;
   padding: 20px;
+  margin-top: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
 /* Footer */
 footer {
   text-align: center;
-  background-color: #0a3d62;
+  background: #0a3d62;
   color: white;
-  padding: 10px;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
+  padding: 15px;
+  margin-top: 40px;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .nav-links {
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .container {
+    padding: 20px;
+  }
 }

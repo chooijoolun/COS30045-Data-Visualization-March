@@ -1,66 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Australian Appliance Energy Consumption</title>
-    <link rel="stylesheet" href="css/styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home | Energy Appliances</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="script.js" defer></script>
 </head>
+
 <body>
-    <header>
-        <a href="#" id="logo-link" class="logo">
-            <img src="images/PowerIcon.png" alt="Power Logo" id="power-logo">
-        </a>
-        <nav>
-            <ul>
-                <li><a href="#" data-page="home" class="nav-link active">Home</a></li>
-                <li><a href="#" data-page="televisions" class="nav-link">Televisions</a></li>
-                <li><a href="#" data-page="about" class="nav-link">About Us</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <main>
-        <!-- Home Page -->
-        <section id="home" class="page active">
-            <h1>Australian Appliance Energy Consumption</h1>
-            <p>Australia's appliances contribute significantly to household energy use. Focus on energy-efficient models to reduce bills and emissions. Key data from <a href="data/data.csv">energy consumption CSV</a>.</p>
-            <ul>
-                <li>Average household uses 5-7 kWh/day on appliances.</li>
-                <li>Televisions: 0.1-0.3 kWh per hour.</li>
-                <li>Government targets: 30% efficiency improvement by 2030.</li>
-            </ul>
-        </section>
+<header class="header">
+  <div class="logo" onclick="goHome()" title="Go to Home">
+    <img src="images/PowerIcon.png" alt="Power Logo">
+  </div>
 
-        <!-- Televisions Page -->
-        <section id="televisions" class="page">
-            <h1>Televisions Energy Consumption</h1>
-            <p>LED TVs use 50-100W, older CRT up to 200W. Standby power: 0.5-2W. Choose Energy Star rated for savings.</p>
-            <table>
-                <thead>
-                    <tr><th>TV Type</th><th>Avg Power (W)</th><th>Annual Cost ($)</th></tr>
-                </thead>
-                <tbody>
-                    <tr><td>LED 55"</td><td>80</td><td>120</td></tr>
-                    <tr><td>OLED 65"</td><td>150</td><td>220</td></tr>
-                    <tr><td>Standby</td><td>1</td><td>5</td></tr>
-                </tbody>
-            </table>
-            <p>Source: Australian market averages (30c/kWh). See <a href="data/data.csv">detailed data</a>.</p>
-        </section>
+  <nav>
+    <ul class="nav-links">
+      <li><a href="index.html" id="home">Home</a></li>
+      <li><a href="televisions.html" id="tv">Televisions</a></li>
+      <li><a href="about.html" id="about">About Us</a></li>
+    </ul>
+  </nav>
+</header>
 
-        <!-- About Us Page -->
-        <section id="about" class="page">
-            <h1>About Us</h1>
-            <p>This site visualizes appliance energy data for Australian consumers. Built for COS30045 Data Visualization.</p>
-            <p>Contact: data-viz@example.com</p>
-        </section>
-    </main>
+<main class="container">
+  <h1>Energy Efficient Appliances in Australia</h1>
 
-    <footer>
-        <p>&copy; 2024 Your Name – Generated with assistance from BLACKBOXAI (GenAI).</p>
-    </footer>
+  <p>
+    Australia uses a star-based energy rating system to help consumers compare appliances.
+    Choosing higher-rated appliances reduces electricity usage and saves money over time.
+  </p>
 
-    <script src="js/script.js"></script>
+  <div class="card">
+    <h2>Why Energy Efficiency Matters</h2>
+    <p>
+      Energy-efficient appliances lower greenhouse gas emissions and reduce your carbon footprint,
+      making them better for both your wallet and the environment.
+    </p>
+  </div>
+</main>
+
+<footer>
+  <p>© 2026 Your Name | Generated with assistance from GenAI</p>
+</footer>
+
 </body>
 </html>

@@ -1,18 +1,21 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>About Us</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us | Energy Appliances</title>
+  <link rel="stylesheet" href="css/styles.css">
   <script src="script.js" defer></script>
 </head>
 
 <body>
 
-<header>
-  <div class="logo" onclick="goHome()">⚡ Power</div>
-
+<header class="header">
+  <div class="logo" onclick="goHome()" title="Go to Home">
+    <img src="images/PowerIcon.png" alt="Power Logo">
+  </div>
   <nav>
-    <ul>
+    <ul class="nav-links">
       <li><a href="index.html" id="home">Home</a></li>
       <li><a href="televisions.html" id="tv">Televisions</a></li>
       <li><a href="about.html" id="about">About Us</a></li>
@@ -20,13 +23,21 @@
   </nav>
 </header>
 
-<main>
+<main class="container">
   <h1>About Us</h1>
+
   <p>
-    This website provides information about appliance energy consumption
-    in the Australian market. Our goal is to help users make informed and
-    environmentally friendly decisions.
+    This website aims to educate users about appliance energy consumption
+    in the Australian market.
   </p>
+
+  <div class="card">
+    <h2>Our Goal</h2>
+    <p>
+      We help consumers make informed decisions by understanding energy labels
+      and choosing efficient appliances.
+    </p>
+  </div>
 </main>
 
 <footer>

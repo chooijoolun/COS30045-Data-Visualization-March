@@ -1,18 +1,21 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Televisions</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Televisions | Energy Appliances</title>
+  <link rel="stylesheet" href="css/styles.css">
   <script src="script.js" defer></script>
 </head>
 
 <body>
 
-<header>
-  <div class="logo" onclick="goHome()">⚡ Power</div>
-
+<header class="header">
+  <div class="logo" onclick="goHome()" title="Go to Home">
+    <img src="images/PowerIcon.png" alt="Power Logo">
+  </div>
   <nav>
-    <ul>
+    <ul class="nav-links">
       <li><a href="index.html" id="home">Home</a></li>
       <li><a href="televisions.html" id="tv">Televisions</a></li>
       <li><a href="about.html" id="about">About Us</a></li>
@@ -20,13 +23,22 @@
   </nav>
 </header>
 
-<main>
-  <h1>Televisions</h1>
+<main class="container">
+  <h1>Television Energy Consumption</h1>
+
   <p>
-    Televisions in Australia are required to display energy rating labels.
-    Modern LED TVs consume significantly less energy compared to older plasma TVs,
-    making them a more efficient choice for households.
+    In Australia, TVs must display energy rating labels.
+    LED and OLED TVs are far more energy-efficient compared to older plasma models.
   </p>
+
+  <div class="card">
+    <h2>Tips to Save Energy</h2>
+    <ul>
+      <li>Choose TVs with higher star ratings</li>
+      <li>Reduce screen brightness</li>
+      <li>Turn off when not in use</li>
+    </ul>
+  </div>
 </main>
 
 <footer>
